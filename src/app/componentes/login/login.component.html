@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-4 col-md-4"></div>
+    <div class="col-sm-4 col-md-4">
+      <div class="loginform" align="center">
+  
+        <form>
+          <div class="imgcontainer">
+            <p>Usuario= Pepe Clave= 123456</p>
+            <img src="/assets/imgs/avatar.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Nombre</b></label>
+            <input type="text" placeholder="Su nombre" name="uname" [(ngModel)]="nombre" required>
+      
+            <label for="psw"><b>Clave</b></label>
+            <input type="password" placeholder="Clave" name="psw" [(ngModel)]="clave" required>
+              
+            <button type="button" class="btn btn-success" (click)="Login()">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4"></div>
+  </div>
+</body>
+</html>

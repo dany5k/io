@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase1_Ejercicios</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <form align="center">
+        <br>
+        <input type="text" name="edadUno" id="edaduno" placeholder="Ingresar edad uno" [(ngModel)]="numUno"><input type="text" name="edadDos" id="edaddos" placeholder="Ingresar edad dos" [(ngModel)]="numDos">
+        <br>
+        <input type="text" name="promedio" id="promedio" [(ngModel)]="promedio" placeholder="Promedio" disabled><input type="text" name="suma" id="suma" [(ngModel)]="suma" placeholder="Suma" disabled>
+        <br>
+        <br>
+        <button (click)="Calcular()">Calcular</button><button type="reset">Limpiar</button>
+        <br>
+        <button class="btn btn-danger" (click)="LogOut()">Cerrar sesion</button>
+      </form>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+  </div>
+</body>
+</html>
